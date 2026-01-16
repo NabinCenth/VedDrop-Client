@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 13px 20px;
     color: #E0E0E0;
 }
 .namelogo img{
@@ -16,15 +16,18 @@
     font-weight: 500;
     margin-right: 8vw;
 }
-
+.file-action{
+    display: flex;
+    gap: 23px;
+    margin-right: 29px;
+}
 .sendFiles{
  font-family:'Space Grotesk', sans-serif;
   padding: 10px 20px;
   border-radius: 9999px;
   border: none;
 min-width: 5vw;
-  background: linear-gradient(90deg, #1ECAD3, #32E0E8);
-  color: #0B1F24;
+
  text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -50,8 +53,6 @@ min-width: 5vw;
   border: none;
 min-width: 5vw;
  text-align: center;
-  background: linear-gradient(90deg, #1ECAD3, #32E0E8);
-  color: #0B1F24;
 
   font-size: 18px;
   font-weight: 700;
@@ -68,4 +69,16 @@ min-width: 5vw;
 
 .ReceiveFiles:active {
   transform: translateY(0);
+}
+.active {
+  background: linear-gradient(90deg, #1ECAD3, #32E0E8);
+  color: #0B1F24;
+  transition: all 0.3s ease;
+}
+
+/* The 'False' / Unselected State */
+.inactive {
+  background: #0B1F24;
+  color: #1ECAD3;
+  transition: all 0.3s ease;
 }
