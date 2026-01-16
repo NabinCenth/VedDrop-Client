@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import './Hero.css'
 function Hero() {
+      const [file, setFile] = useState(null);
+    const [isDragging, setIsDragging] = useState(false);
     const [pin,setPin]=useState('5B7Z9R');
     const[copied,setCopied]=useState(false); 
  const fileInputRef = React.useRef(null);
@@ -18,6 +20,25 @@ function Hero() {
       console.error("Error copying to clipboard:", error);
     }
   }
+  //Hande file drop
+const handleDrop = (e) => {
+  e.preventDefault();
+    e.stopPropagation();
+  console.log("File dropped");
+  setIsDragging(false); // drop ends dragging
+
+  if (file) return; // prevent selecting multiple files
+
+  const droppedFile = e.dataTransfer.files[0];
+  if (droppedFile) {
+    setFile(droppedFile);
+    console.log("Dropped file:", droppedFile); // log the file directly
+  }
+};
+const handleoverdrop =(e)=>{
+    e.preventDefault();
+    console.log("File dropped");
+}
 
  const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -57,7 +78,24 @@ function Hero() {
         </div>
 
         {/* Right Side */}
-        <div className="pin-card" onClick={openFileSelector}>
+        <div className="pin-card" 
+        onClick={openFileSelector}
+  onDragEnter={(e) => {e.preventDefault();
+    e.stopPropagation();
+  }}   
+        onDragOver={
+            (e) => {
+          e.preventDefault();
+          e.stopPropagation()
+          if (!file) setIsDragging(true);
+              }}
+        
+        onDragLeave={() => {setIsDragging(false);
+e.preventDefault();
+          e.stopPropagation()
+        }}
+        onDrop={handleDrop}
+        >
           <p className="drag-text">Drag & drop file here</p>
 
           <div className="pin-code">5B7Z9R</div>

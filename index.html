@@ -12,7 +12,11 @@
   <body>
 
     <div id="root"></div>
-   
+   <script>
+  window.addEventListener("dragover", e => e.preventDefault());
+  window.addEventListener("drop", e => e.preventDefault());
+</script>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
