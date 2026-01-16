@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    color: #E0E0E0;
+}
+.namelogo img{
+    margin-left: 20px;
+    height: 8vh;
+}
+.navlinks{
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 8vw;
+}
+
+.sendFiles{
+ font-family:'Space Grotesk', sans-serif;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  border: none;
+min-width: 5vw;
+  background: linear-gradient(90deg, #1ECAD3, #32E0E8);
+  color: #0B1F24;
+ text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+
+  box-shadow: 0 0 20px rgba(50, 224, 232, 0.35);
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.sendFiles:hover {
+  box-shadow: 0 0 28px rgba(50, 224, 232, 0.55);
+  transform: translateY(-1.5px);
+}
+
+.sendFiles:active {
+  transform: translateY(0);
+}
+.ReceiveFiles{
+     font-family:'Space Grotesk', sans-serif;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  border: none;
+min-width: 5vw;
+ text-align: center;
+  background: linear-gradient(90deg, #1ECAD3, #32E0E8);
+  color: #0B1F24;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  box-shadow: 0 0 20px rgba(50, 224, 232, 0.35);
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+.ReceiveFiles:hover {
+  box-shadow: 0 0 28px rgba(50, 224, 232, 0.55);
+  transform: translateY(-1.5px);
+}
+
+.ReceiveFiles:active {
+  transform: translateY(0);
+}

@@ -1,0 +1,104 @@
+.hero {
+  background-color: #0f1720;
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Left */
+.hero-left{
+    display: flex;
+    flex-direction: column;
+}
+.hero-left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero-left h1 span {
+  color: #2dd4bf;
+}
+
+.hero-left p {
+  color: #9ca3af;
+  max-width: 420px;
+}
+
+.upload-btn {
+  margin-top: 30px;
+  padding: 10px 28px;
+  background: #2dd4bf;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+}
+
+.upload-btn:hover {
+  background: #22c1ae;
+}
+
+.file-types {
+  margin-top: 20px;
+  display: flex;
+  align-self: center;
+  gap: 16px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Right */
+.pin-card {
+  background: #151f2b;
+  border: 2px dashed rgba(45, 212, 191, 0.4);
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+.drag-text {
+  color: #9ca3af;
+}
+
+.pin-code {
+  margin: 20px 0;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  color: #2dd4bf;
+}
+
+.expiry {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.copy-btn {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: #2dd4bf;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  color: #22c1ae;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

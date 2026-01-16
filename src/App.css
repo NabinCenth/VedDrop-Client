@@ -1,0 +1,13 @@
+.veddrop-bg {
+    position: absolute;
+    min-width: 500px;
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+  background: radial-gradient(
+    circle at 20% 20%, 
+    #1a2a3a 0%,
+    #0d131a 50%,
+    #080a0c 100%
+  );
+}

@@ -1,0 +1,20 @@
+.pin-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.pin-box {
+  width: 48px;
+  height: 56px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.pin-box:focus {
+  border-color: #1abc9c;
+}
