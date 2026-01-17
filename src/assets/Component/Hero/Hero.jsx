@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef,useEffect } from 'react';
 import './Hero.css';
 
 function Hero() {
@@ -6,7 +6,27 @@ function Hero() {
   const [isDragging, setIsDragging] = useState(false);
   const [pin, setPin] = useState('5B7Z9R');
   const [copied, setCopied] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
   const fileInputRef = useRef(null);
+const handleUpload = async () => {
+  if (!file) return;
+
+  const formData = new FormData();
+  formData.append("file", file);
+  console.log("Uploading file:", formData.get("file"));
+
+  try {
+    const res = await fetch("http://localhost:300/upload", {
+      method: "POST",
+      body: formData
+    });
+    const data = await res.json();
+    console.log("Upload successful:", data);
+    setIsUploading(true);
+  } catch (err) {
+    console.error("Upload failed:", err);
+  }
+};
 
   // Copy PIN logic
   async function handleCopy(e) {
@@ -69,9 +89,13 @@ function Hero() {
         <div className="hero-left">
           <h1>SHARE FILES SECURELY <br /><span>WITH A PIN</span></h1>
           <p>Upload a file and get a temporary PIN. No signup.<br />No public links.</p>
-          <button className="upload-btn" >
-         Upload File
-          </button>
+      <button 
+  className="upload-btn" 
+  onClick={handleUpload} 
+  disabled={isUploading}
+>
+  {isUploading ? "Uploaded" : "Upload File"}
+</button>
           <div className="file-types">
             <span>PDF</span><span>Images</span><span>ZIP</span>
           </div>
