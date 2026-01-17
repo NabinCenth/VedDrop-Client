@@ -89,9 +89,21 @@ function Hero() {
           onDrop={handleDrop}
           style={{ border: isDragging ? '2px solid transparent' :'2px dashed #007bff'  }}
         >
-          <p className="drag-text">
-            {file ? `Selected: ${file.name}` : "Drag & drop file here"}
-          </p>
+     <p className="drag-text">
+  {file ? (
+    <>
+      Selected: {file.name}
+      <br />
+      Size:{" "}
+      {file.size < 1024 * 1024
+        ? `${(file.size / 1024).toFixed(2)} KB`
+        : `${(file.size / (1024 * 1024)).toFixed(2)} MB`}
+    </>
+  ) : (
+    "Drag & drop file here"
+  )}
+</p>
+
 
           <div className="pin-code">{pin}</div>
           <p className="expiry">Expires in: 29:59</p>
