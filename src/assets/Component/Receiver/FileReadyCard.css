@@ -1,0 +1,25 @@
+.file-ready-card {
+  background: #141c20;
+  border-radius: 18px;
+  padding: 28px;
+  width: 340px;
+  color: #e6f2f3;
+  box-shadow: 0 0 0 1px rgba(80, 220, 220, 0.25);
+}
+
+.file-info {
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.file-info span {
+  opacity: 0.6;
+  margin-right: 6px;
+}
+
+.file-ready-card .note {
+  font-size: 11px;
+  opacity: 0.5;
+  margin-top: 14px;
+}

@@ -1,0 +1,21 @@
+.pin-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.pin-box {
+  width: 42px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid rgba(80, 220, 220, 0.4);
+  background: transparent;
+  color: #4fe3d6;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pin-box:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(79, 227, 214, 0.3);
+}

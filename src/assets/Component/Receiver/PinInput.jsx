@@ -27,7 +27,7 @@ export default function PinInput({ length = 6, onComplete }) {
       {Array.from({ length }).map((_, i) => (
         <input
           key={i}
-          type="password"
+          type="text"
           maxLength="1"
           className="pin-box"
           ref={el => (inputsRef.current[i] = el)}

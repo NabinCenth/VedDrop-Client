@@ -1,0 +1,47 @@
+.pin-card {
+  background: #141c20;
+  border-radius: 18px;
+  padding: 28px;
+  width: 340px;
+  color: #e6f2f3;
+  box-shadow: 0 0 0 1px rgba(80, 220, 220, 0.25);
+}
+
+.pin-card h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.pin-card .sub {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 18px;
+}
+
+.pin-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.pin-row input {
+  width: 42px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid rgba(80, 220, 220, 0.4);
+  background: transparent;
+  color: #4fe3d6;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pin-card .primary {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #3ad7c7, #49e2d8);
+  color: #062a2a;
+  font-weight: 600;
+  cursor: pointer;
+}

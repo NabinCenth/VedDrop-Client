@@ -1,10 +1,11 @@
 import React, { useState, useRef,useEffect } from 'react';
 import './Hero.css';
+import Countdown from '../Hero/Countdown.jsx';
 
 function Hero() {
   const [file, setFile] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
-  const [pin, setPin] = useState('5B7Z9R');
+  const [pin, setPin] = useState('');
   const [copied, setCopied] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const fileInputRef = useRef(null);
@@ -21,7 +22,8 @@ const handleUpload = async () => {
       body: formData
     });
     const data = await res.json();
-    console.log("Upload successful:", data);
+    console.log("Upload successful:", data.pin);
+    setPin(data.pin);
     setIsUploading(true);
   } catch (err) {
     console.error("Upload failed:", err);
@@ -113,7 +115,7 @@ const handleUpload = async () => {
           onDrop={handleDrop}
           style={{ border: isDragging ? '2px solid transparent' :'2px dashed #007bff'  }}
         >
-     <p className="drag-text">
+     <p className="drag-text" >
   {file ? (
     <>
       Selected: {file.name}
@@ -130,7 +132,11 @@ const handleUpload = async () => {
 
 
           <div className="pin-code">{pin}</div>
-          <p className="expiry">Expires in: 29:59</p>
+       
+          {pin?<><Countdown initialMinutes={10} /><button className="copy-btn" onClick={handleCopy} >
+            {copied ? "Copied" : "Copy"}
+          </button> </>:null}
+
 
           <input
             type="file"
@@ -139,9 +145,7 @@ const handleUpload = async () => {
             hidden
           />
           
-          <button className="copy-btn" onClick={handleCopy} >
-            {copied ? "Copied" : "Copy"}
-          </button>
+          
         </div>
       </div>
     </section>
