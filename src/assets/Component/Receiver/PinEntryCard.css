@@ -2,42 +2,62 @@
   background: #141c20;
   display: flex;
   flex-direction: column;
+
+  width: min(92vw, 420px);
+  min-height: 320px;
+
   border-radius: 18px;
-  padding: 28px;
-  min-width: 340px;
-  width: 30vw;
-  min-height: fit-content;
-  height: 44vh;
+  padding: clamp(15px, 4vw, 28px);
+ font-family: 'Inter', sans-serif;
   color: #e6f2f3;
   box-shadow: 0 0 0 1px rgba(80, 220, 220, 0.25);
-  padding-bottom: 10vh;}
+}
+
+.pin-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
 
 .pin-card h2 {
-  font-size: 18px;
-  margin-bottom: 6px;
+  font-size: clamp(28px, 2.5vw, 18px);
+  margin-bottom: 3px;
 }
 
 .pin-card .sub {
-  font-size: 13px;
+  font-size: clamp(14px, 2.8vw, 13px);
   opacity: 0.7;
-  margin-bottom: 18px;
+  margin-bottom: clamp(12px, 4vw, 18px);
 }
 
+.input--pin {
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+}
+
+/* Button */
 .primary {
   width: 100%;
   padding: 12px;
   border-radius: 14px;
   border: none;
+
   background: linear-gradient(135deg, #3ad7c7, #49e2d8);
   color: #062a2a;
   font-weight: 600;
   cursor: pointer;
-  margin-top: auto;
-}
-.input--pin{
-    align-self: center;
-    letter-spacing: 15px;
-    margin-top: auto;
-    margin-bottom: auto;
 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary:hover {
+  box-shadow: 0 0 28px rgba(50, 224, 232, 0.35);
+  transform: translateY(-1.5px);
+}
+
+.primary:active {
+  transform: translateY(0);
+  box-shadow: 0 0 28px rgba(50, 224, 232, 0.55);
 }

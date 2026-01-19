@@ -104,6 +104,7 @@ const handleUpload = async () => {
         </div>
 
         {/* Right Side / Drop Zone */}
+        <div className="hero-right"> 
         <div 
           className={`pin-card ${isDragging ? 'dragging' : ''}`} 
          onClick={() => {
@@ -131,7 +132,8 @@ const handleUpload = async () => {
 </p>
 
 
-          <div className="pin-code">{pin}</div>
+          <div className={`pin-code ${pin ? 'pulse' : ''}`}>{pin}</div>
+
        
           {pin?<><Countdown initialMinutes={10} /><button className="copy-btn" onClick={handleCopy} >
             {copied ? "Copied" : "Copy"}
@@ -147,6 +149,8 @@ const handleUpload = async () => {
           
           
         </div>
+        </div>
+        
       </div>
     </section>
   );

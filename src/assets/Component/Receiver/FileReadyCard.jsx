@@ -2,12 +2,13 @@ import React from 'react';
 import './FileReadyCard.css';
 
 function FileReadyCard() {
-return (
+return (<> 
+<div className="fileready-container"> 
+
 <div className="file-ready-card">
 
 
 <h2>File Ready for Download</h2>
-
 
 <div className="file-info">
 <div><span>File Name:</span> Project_Proposal_v2.pdf</div>
@@ -15,12 +16,14 @@ return (
 <div><span>Upload Time:</span> 15 mins ago</div>
 </div>
 
-
-<button className="primary">⬇ Download File</button>
-
-
-<p className="note">File will be deleted automatically after download or expiry.</p>
 </div>
+<div className="downloaditem"><button className="primary">⬇ Download File</button>
+
+
+<p className="note">File will be deleted automatically after 10 minutes.</p> </div>
+</div>
+
+</>
 );
 }
 export default FileReadyCard;

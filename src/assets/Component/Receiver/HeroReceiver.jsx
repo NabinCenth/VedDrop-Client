@@ -12,11 +12,10 @@ if (pin){
 }
 return (
 <div className="page">
-<div className="cards">
-<PinEntryCard pin={pin} setPin={setPin} />
-{/* <PinErrorCard />
-<FileReadyCard /> */}
-</div>
+
+<PinEntryCard  pin={pin} setPin={setPin} />
+ {/* <PinErrorCard /> */}
+{/* <FileReadyCard /> */}
 </div>
 );
 }

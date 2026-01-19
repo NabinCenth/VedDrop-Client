@@ -1,25 +1,101 @@
-.file-ready-card {
-  background: #141c20;
+.fileready-container{
+
+    background: #141c20;
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+  width: min(92vw, 420px);
+  min-height: 320px;
+
   border-radius: 18px;
-  padding: 28px;
-  width: 340px;
+  padding: clamp(15px, 4vw, 28px);
+ box-shadow: 0 0 0 1px rgba(80, 220, 220, 0.25);
+  box-sizing: border-box;
+
+}
+.file-ready-card {
+ 
+ font-family: 'Inter', sans-serif;
   color: #e6f2f3;
-  box-shadow: 0 0 0 1px rgba(80, 220, 220, 0.25);
+  /* Visuals */
+  color: #e6f2f3;
+  font-family: 'Inter', sans-serif;
+ 
+}
+
+.file-ready-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.file-ready-card h2 {
+  font-size: clamp(20px, 5vw, 24px); /* Fluid typography */
+  margin-bottom: 8px;
+  margin-top: 0;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .file-info {
-  font-size: 13px;
-  line-height: 1.7;
-  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  font-size: clamp(13px, 3vw, 14px);
+  display: flex;
+  justify-content: b;
+  line-height: 1.5;
 }
 
 .file-info span {
   opacity: 0.6;
-  margin-right: 6px;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.downloaditem p {
+ margin-top: 5px;
+ margin-bottom: 0;
+  padding: 3px 3px;
+  text-align: center;
+  font-size: small;
+  word-break: break-all; /* Prevents long filenames from breaking layout */
+   color:#e6f2f3;
+   opacity: 0.6;
+  
+}
+
+/* Button Styling (Internalized) */
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #3ad7c7, #49e2d8);
+  color: #062a2a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 16px;
+}
+
+.primary-btn:hover {
+  box-shadow: 0 0 28px rgba(50, 224, 232, 0.35);
+  transform: translateY(-1.5px);
+}
+
+.primary-btn:active {
+  transform: translateY(0);
 }
 
 .file-ready-card .note {
   font-size: 11px;
   opacity: 0.5;
   margin-top: 14px;
+  text-align: center;
 }

@@ -1,21 +1,20 @@
 .pin-container {
   display: flex;
-  gap: 10px;
-  margin-bottom: 18px;
+  gap: clamp(6px, 2.5vw, 10px);
+  margin-bottom: clamp(12px, 4vw, 18px);
+  justify-content: center;
 }
 
 .pin-box {
-  width: 42px;
-  height: 48px;
-  border-radius: 10px;
+  width: clamp(36px, 10vw, 44px);
+  height: clamp(42px, 12vw, 50px);
+
+  border-radius: clamp(8px, 2vw, 10px);
   border: 1px solid rgba(80, 220, 220, 0.4);
+
   background: transparent;
   color: #4fe3d6;
-  font-size: 20px;
-  text-align: center;
-}
 
-.pin-box:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(79, 227, 214, 0.3);
+  font-size: clamp(16px, 4.5vw, 20px);
+  text-align: center;
 }

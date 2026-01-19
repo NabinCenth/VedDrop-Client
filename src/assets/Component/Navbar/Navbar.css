@@ -1,84 +1,98 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 13px 20px;
-    color: #E0E0E0;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: clamp(10px, 3vw, 16px) clamp(14px, 4vw, 24px);
+  color: #E0E0E0;
+  gap: 12px;
 }
-.namelogo img{
-    margin-left: 20px;
-    height: 8vh;
+
+/* Logo */
+.namelogo img {
+  height: clamp(36px, 6vw, 52px);
+  margin-left: 0;
 }
-.navlinks{
-    display: flex;
-    gap: 40px;
-    font-size: 18px;
-    font-weight: 500;
-    margin-right: 8vw;
+
+/* Nav links */
+.navlinks {
+  display: flex;
+  gap: clamp(16px, 4vw, 40px);
+
+  font-size: clamp(14px, 3.5vw, 18px);
+  font-weight: 500;
+
+  margin-right: 0;
 }
-.file-action{
-    display: flex;
-    gap: 23px;
-    margin-right: 29px;
+
+/* Actions */
+.file-action {
+  display: flex;
+  gap: clamp(12px, 3vw, 23px);
+  margin-right: 0;
 }
-.sendFiles{
- font-family:'Space Grotesk', sans-serif;
-  padding: 10px 20px;
+
+/* Shared button base */
+.sendFiles,
+.ReceiveFiles {
+  font-family: 'Space Grotesk', sans-serif;
+
+  padding: clamp(8px, 2.5vw, 10px)
+           clamp(16px, 4vw, 24px);
+
   border-radius: 9999px;
   border: none;
-min-width: 5vw;
 
- text-align: center;
-  font-size: 18px;
+  min-width: unset;
+  font-size: clamp(14px, 3.5vw, 18px);
   font-weight: 700;
 
-  box-shadow: 0 0 20px rgba(50, 224, 232, 0.35);
+  text-align: center;
   cursor: pointer;
 
-  transition: all 0.2s ease;
-}
-
-.sendFiles:hover {
-  box-shadow: 0 0 28px rgba(50, 224, 232, 0.55);
-  transform: translateY(-1.5px);
-}
-
-.sendFiles:active {
-  transform: translateY(0);
-}
-.ReceiveFiles{
-     font-family:'Space Grotesk', sans-serif;
-  padding: 10px 24px;
-  border-radius: 9999px;
-  border: none;
-min-width: 5vw;
- text-align: center;
-
-  font-size: 18px;
-  font-weight: 700;
-
   box-shadow: 0 0 20px rgba(50, 224, 232, 0.35);
-  cursor: pointer;
-
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+/* Hover / Active */
+.sendFiles:hover,
 .ReceiveFiles:hover {
   box-shadow: 0 0 28px rgba(50, 224, 232, 0.55);
   transform: translateY(-1.5px);
 }
 
+.sendFiles:active,
 .ReceiveFiles:active {
   transform: translateY(0);
 }
+
+/* States */
 .active {
   background: linear-gradient(90deg, #1ECAD3, #32E0E8);
   color: #0B1F24;
-  transition: all 0.3s ease;
 }
 
-/* The 'False' / Unselected State */
 .inactive {
   background: #0B1F24;
   color: #1ECAD3;
-  transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  .container {
+
+    padding-top: 20px;
+  
+    justify-content: space-around;
+  }
+  
+
+  .navlinks {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .file-action {
+    order: 2;
+  }
 }

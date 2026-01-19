@@ -1,13 +1,17 @@
 import React from 'react'
 import './Navbar.css'
 import Logo from "../../NewLogo.png";
-function Navbar() {
+function Navbar({setReceiving}) {
+
     const[isSopened,setIsSopened]=React.useState(true);
     const handleReceive=()=>{
         setIsSopened(false);
+  
+        setReceiving(true);
     }
     const handleSend=()=>{
         setIsSopened(true);
+        setReceiving(false);
     }
   return (
 <> <div className="container"> 

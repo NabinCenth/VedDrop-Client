@@ -1,13 +1,19 @@
 .veddrop-bg {
-    position: absolute;
-    min-width: 500px;
+  position: relative;
   width: 100%;
   min-height: 100vh;
-  height: max-content;
   background: radial-gradient(
-    circle at 20% 20%, 
+    circle at 20% 20%,
     #1a2a3a 0%,
     #0d131a 50%,
     #080a0c 100%
   );
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .veddrop-bg {
+   min-width: 103%; /* Adds padding for smaller screens */
+
+  }
 }

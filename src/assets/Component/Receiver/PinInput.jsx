@@ -28,6 +28,7 @@ export default function PinInput({ length = 6, onComplete }) {
         <input
           key={i}
           type="text"
+          inputMode="numeric"
           maxLength="1"
           className="pin-box"
           ref={el => (inputsRef.current[i] = el)}

@@ -1,7 +1,8 @@
 .hero {
-  background-color: #0f1720;
+margin-top: 4px;
   color: white;
-  padding: 100px 20px;
+  padding: 0px;
+
 }
 
 .hero-container {
@@ -33,6 +34,8 @@
   color: #9ca3af;
   max-width: 420px;
   padding-top: 2px;
+  text-align: center;
+  align-self: center;
 }
 .upload-btn {
   margin-top: 30px;
@@ -68,12 +71,19 @@
 }
 
 /* Right */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
 .pin-card {
   background: #151f2b;
   border: 2px dashed rgba(45, 212, 191, 0.4);
   border-radius: 20px;
-  padding: 50px;
+  padding: 0px;
   text-align: center;
+  align-self: center;
 }
 
 .drag-text {
@@ -82,10 +92,13 @@
 }
 
 .pin-code {
-  margin: 20px 0;
-  font-size: 42px;
+  display: block;          /* ensures it behaves like a block */
+  text-align: center;  
+   width: min(92vw, 420px);    /* center the text horizontally */
+  margin: 20px auto;       /* vertical spacing + horizontal auto centering */
+  font-size: clamp(28px, 7vw, 42px); /* responsive font size */
   font-weight: bold;
-  letter-spacing: 6px;
+  letter-spacing: clamp(3px, 2vw, 6px);
   color: #2dd4bf;
 }
 
@@ -112,4 +125,14 @@
     grid-template-columns: 1fr;
     text-align: center;
   }
+}
+@media (max-width:764px) {
+  .hero{
+    padding:0px 20px;
+    padding-left: 0px;
+  }
+  .hero-left h1 {
+margin-top: 9px;
+}
+ 
 }
