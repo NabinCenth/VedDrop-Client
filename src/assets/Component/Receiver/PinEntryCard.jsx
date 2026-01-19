@@ -18,7 +18,7 @@ function PinEntryCard({ setPin,toHandleData }) {
 const handleAcess= async ()=>{
   console.log("Accessing file with PIN:", pin1);
   try{
-const res = await fetch(`http://localhost:300/upload/${pin1}`,{
+const res = await fetch(`https://veddrop-server.onrender.com/upload/${pin1}`,{
   method:"GET",
 });
 const data = await res.json();
