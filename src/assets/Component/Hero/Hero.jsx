@@ -17,7 +17,7 @@ const handleUpload = async () => {
   console.log("Uploading file:", formData.get("file"));
 
   try {
-    const res = await fetch("https://veddrop-server.onrender.com", {
+    const res = await fetch("https://veddrop-server.onrender.com/upload", {
       method: "POST",
       body: formData
     });
