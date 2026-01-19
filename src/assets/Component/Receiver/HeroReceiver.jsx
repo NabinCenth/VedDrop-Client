@@ -6,14 +6,20 @@ import FileReadyCard from "./FileReadyCard.jsx";
 
 export default function HeroReceiver() {
 const [pin, setPin] = useState("");
-
-if (pin){
-    console.log("PIN in HeroReceiver:", pin);
+const [isFileReady,setIsFileReady]=useState(false);
+const [fileData,setFileData]=useState(null);
+const handleReceivedata=(data)=>{
+    console.log("Data received in HeroReceiver:", data);
+    setFileData(data);
+    setIsFileReady(true);
 }
 return (
 <div className="page">
-
-<PinEntryCard  pin={pin} setPin={setPin} />
+{!isFileReady ? (
+        <PinEntryCard pin={pin} setPin={setPin} toHandleData={handleReceivedata} />
+      ) : (
+        <FileReadyCard fileData={fileData} />
+      )}
  {/* <PinErrorCard /> */}
 {/* <FileReadyCard /> */}
 </div>
