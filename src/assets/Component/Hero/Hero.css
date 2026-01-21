@@ -1,7 +1,7 @@
 .hero {
 margin-top: 4px;
   color: white;
-  padding: 0px;
+  padding: 0px 0px;
 
 }
 
@@ -76,34 +76,34 @@ margin-top: 4px;
   flex-direction: column;
   align-items: center;
   padding-bottom: 30px;
+  padding-left: 0px;
 }
 .pin-card {
   background: #151f2b;
   border: 2px dashed rgba(45, 212, 191, 0.4);
   border-radius: 20px;
-  padding: 0px;
+  padding: 20px;           /* add some padding */
   display: flex;
-  text-align: center;
-  align-self: center;
+  flex-direction: column;   /* stack children vertically */
+  justify-content: center;  /* vertical centering */
+  align-items: center;      /* horizontal centering */
+  min-height: 200px;        /* optional: give some height */
+  text-align: center;       /* center text inside children */
 }
 
 .drag-text {
   color: #9ca3af;
   font-size: larger;
-  align-self: center;
+  margin-bottom: 20px;       /* spacing between text and PIN code */
 }
 
 .pin-code {
-  display: block;          /* ensures it behaves like a block */
-  text-align: center;  
-   width: min(92vw, 420px);    /* center the text horizontally */
-  margin: 20px auto;       /* vertical spacing + horizontal auto centering */
-  font-size: clamp(28px, 7vw, 42px); /* responsive font size */
+  display: block;          
+  font-size: clamp(28px, 7vw, 42px);
   font-weight: bold;
   letter-spacing: clamp(3px, 2vw, 6px);
   color: #2dd4bf;
 }
-
 .expiry {
   font-size: 14px;
   color: #6b7280;
@@ -130,8 +130,7 @@ margin-top: 4px;
 }
 @media (max-width:764px) {
   .hero{
-    padding:0px 20px;
-    padding-left: 0px;
+    padding:0px 0px;
   }
   .hero-left h1 {
 margin-top: 9px;

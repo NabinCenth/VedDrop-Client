@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./HeroReceiver.css";
 import PinEntryCard from "./PinEntryCard.jsx";
-import PinErrorCard from "./PinErrorCard.jsx";
 import FileReadyCard from "./FileReadyCard.jsx";
 
 export default function HeroReceiver() {
