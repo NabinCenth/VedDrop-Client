@@ -1,6 +1,7 @@
 import React, { useState, useRef,useEffect } from 'react';
 import './Hero.css';
 import Countdown from '../Hero/Countdown.jsx';
+const API = import.meta.env.VITE_API_BASE_URL;
 
 function Hero() {
   const [file, setFile] = useState(null);
@@ -17,10 +18,10 @@ const handleUpload = async () => {
   console.log("Uploading file:", formData.get("file"));
 
   try {
-    const res = await fetch("https://veddrop-server.onrender.com/upload", {
-      method: "POST",
-      body: formData
-    });
+     const res = await fetch(`${API}/upload`, {
+    method: "POST",
+    body: formData
+  });
     const data = await res.json();
     console.log("Upload successful:", data.pin);
     setPin(data.pin);

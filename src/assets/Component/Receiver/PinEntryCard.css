@@ -16,7 +16,7 @@
 .pin-content {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 2px;
   flex: 1;
 }
 
@@ -28,7 +28,7 @@
 .pin-card .sub {
   font-size: clamp(14px, 2.8vw, 13px);
   opacity: 0.7;
-  margin-bottom: clamp(12px, 4vw, 18px);
+  margin-bottom: 2;
 }
 
 .input--pin {
@@ -60,4 +60,18 @@
 .primary:active {
   transform: translateY(0);
   box-shadow: 0 0 28px rgba(50, 224, 232, 0.55);
+}
+/* Error state for pin card */
+.pin-card.error {
+  border: 2px solid #ff4d4f; /* solid red */
+  box-shadow: 0 0 12px rgba(255, 77, 79, 0.35);
+}
+
+/* Error message text */
+.pin-error-message {
+  color: #ff4d4f;
+  font-size: clamp(12px, 2.5vw, 14px);
+  margin-top: 6px;
+  margin-bottom: 0;
+  text-align: center;
 }
