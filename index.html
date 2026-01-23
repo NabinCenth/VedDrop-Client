@@ -1,46 +1,75 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-<link rel="icon" type="image/png" href="/favicondrop.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Rubik+Dirt&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VedDrop</title>
-  <meta name="description" content="VedDrop: A temporary file sharing platform created by Bed Prasad Pokharel (Nabin Pokharel). Upload files and share them securely for 10 minutes.">
-  <meta name="author" content="Bed Prasad Pokharel (Nabin Pokharel)">
-  <meta name="keywords" content="VedDrop, Bed Prasad Pokharel, Nabin Pokharel, temporary file sharing, file sharing app, secure file sharing, online file sharing">
+  <meta charset="UTF-8" />
 
-      <meta property="og:title" content="VedDrop - Temporary File Sharing">
-  <meta property="og:description" content="VedDrop: Upload files and share them securely for 10 minutes.">
-  <meta property="og:type" content="website">
-   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "VedDrop",
-  "url": "https://veddrop.netlify.app",
-  "description": "VedDrop is a temporary file sharing platform. Upload files and share them securely for 10 minutes.",
-  "operatingSystem": "All",
-  "applicationCategory": "UtilitiesApplication",
-  "author": {
-    "@type": "Person",
-    "name": "Bed Prasad Pokharel",
-    "alternateName": "Nabin Pokharel",
-    "sameAs": [
-      "https://bedprasadpokharel.com.np",
-      "https://github.com/NabinCenth"
-    ]
+  <link rel="icon" type="image/png" href="/favicondrop.png" />
+  <link rel="apple-touch-icon" href="/favicondrop.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ STRONG TITLE -->
+  <title>VedDrop – Secure Temporary File Sharing with PIN</title>
+
+  <!-- ✅ CLEAN DESCRIPTION -->
+  <meta
+    name="description"
+    content="VedDrop is a secure temporary file sharing platform by Nabin Pokharel. Upload files and share them privately using a PIN. Files auto-delete in 10 minutes."
+  />
+
+  <meta name="author" content="Nabin Pokharel" />
+
+  <meta
+    name="keywords"
+    content="VedDrop, secure file sharing, temporary file sharing, file sharing with PIN, private file sharing"
+  />
+
+  <!-- ✅ OPEN GRAPH (IMPORTANT) -->
+  <meta property="og:site_name" content="VedDrop" />
+  <meta property="og:title" content="VedDrop – Secure File Sharing with a PIN" />
+  <meta property="og:description" content="Upload files and share them securely using a temporary PIN. No signup. Auto-delete in 10 minutes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://veddrop.netlify.app" />
+
+  <!-- ✅ STRUCTURED DATA (GOOD, JUST TWEAKED) -->
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "VedDrop",
+    "alternateName": ["Ved Drop", "VedDrop App"],
+    "url": "https://veddrop.netlify.app/"
   },
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "VedDrop",
+    "url": "https://veddrop.netlify.app",
+    "description": "VedDrop is a secure temporary file sharing platform. Upload files and share them privately using a PIN. Files expire automatically after 10 minutes.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "author": {
+      "@type": "Person",
+      "name": "Nabin Pokharel",
+      "alternateName": "Bed Prasad Pokharel",
+      "sameAs": "https://github.com/NabinCenth"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Nabin Pokharel",
+      "url": "https://bedprasadpokharel.com.np"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
   }
-}
+]
 </script>
-  </head>
+</head>
+
   <body>
 
     <div id="root"></div>

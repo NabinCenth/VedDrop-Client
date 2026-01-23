@@ -34,32 +34,32 @@ const handleDownload = async (e) => {
 };
 
   return (
-    <div className="fileready-container">
-      <div className="file-ready-card">
+   <section className="fileready-container"> {/* Semantic section for SEO */}
+      <article className="file-ready-card"> {/* Landmark for content */}
         <h2>File Ready for Download</h2>
 
         <div className="file-info">
           <div>
-            <span>File Name:</span> {fileData.filename}
+            <strong>File Name:</strong> {fileData.filename}
           </div>
           <div>
-            <span>Size:</span>{' '}
+            <strong>Size:</strong>{' '}
             {fileData.size < 1024 * 1024
               ? `${(fileData.size / 1024).toFixed(2)} KB`
               : `${(fileData.size / (1024 * 1024)).toFixed(2)} MB`}
           </div>
         </div>
-      </div>
+      </article>
 
       <div className="downloaditem">
         <button className="primary" onClick={handleDownload}>
           ⬇ Download File
         </button>
         <p className="note">
-          File will be deleted automatically after 10 minutes.
+          <strong>Security Note:</strong> File will be deleted automatically after 10 minutes.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 
