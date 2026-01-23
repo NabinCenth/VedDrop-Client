@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://veddrop.netlify.app/sitemap.xml
