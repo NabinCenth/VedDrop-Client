@@ -1,16 +1,60 @@
-# React + Vite
+VedDrop - Secure Temporary File Sharing 🚀
+VedDrop is a high-performance, secure web application designed for fast, temporary file transfers using a private PIN system. Built with privacy in mind, it eliminates the need for public links or permanent storage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Key Features
+PIN-Based Sharing: Secure your uploads with a unique PIN.
 
-Currently, two official plugins are available:
+Auto-Deletion: All files are automatically deleted after 10 minutes for maximum privacy.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+No Sign-up Required: Start sharing immediately without an account.
 
-## React Compiler
+Drag & Drop: Intuitive interface for quick file uploads.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Multiple File Types: Supports PDFs, Images, ZIP files, and more.
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
+Frontend: React.js (Vite)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Styling: CSS3
+
+Deployment: Netlify
+
+🚀 Getting Started
+Prerequisites
+Node.js (v18 or higher)
+
+npm or yarn
+
+Installation
+Clone the repository:
+
+Bash
+
+git clone https://github.com/NabinCenth/VedDrop.git
+Navigate to the project directory:
+
+Bash
+
+cd VedDrop
+Install dependencies:
+
+Bash
+
+npm install
+Start the development server:
+
+Bash
+
+npm run dev
+🌐 Live Demo
+Experience the app live at: https://veddrop.netlify.app/
+
+👤 Author
+Nabin Pokharel
+
+GitHub: @NabinCenth
+
+Website: bedprasadpokharel.com.np
+
+🛡️ Privacy & Security
+VedDrop ensures that your data remains yours. By using temporary storage and PIN-restricted access, we ensure that no public footprint of your files remains on the web after they expire
