@@ -1,7 +1,4 @@
-# <img src="src/assets/NewLogo.png" width="32" height="32" /> VedDrop - Secure File Sharing
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-id/deploy-status)](https://veddrop.netlify.app)
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+# <img src="src/assets/VedDrop.png" width="32" height="32" /> VedDrop - Secure File Sharing
 
 **VedDrop** is a privacy-focused web application designed for fast, temporary file transfers using a secure PIN system. No signups, no permanent links, and no data footprint.
 
