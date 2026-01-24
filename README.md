@@ -1,4 +1,4 @@
-# <img src="public/favicondrop.png" width="32" height="32" /> VedDrop - Secure File Sharing
+# <img src="src/assets/NewLogo.png" width="32" height="32" /> VedDrop - Secure File Sharing
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-id/deploy-status)](https://veddrop.netlify.app)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -11,7 +11,7 @@
 
 ## 📸 Preview
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NabinCenth/VedDrop-Client/main/src/assets/preview.png" alt="VedDrop Interface" width="800">
+  <img src="VedDrop-Preview.png" alt="VedDrop Interface" width="800">
 </p>
 
 ## ✨ Core Features
