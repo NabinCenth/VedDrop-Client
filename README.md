@@ -1,60 +1,55 @@
-VedDrop - Secure Temporary File Sharing 🚀
-VedDrop is a high-performance, secure web application designed for fast, temporary file transfers using a private PIN system. Built with privacy in mind, it eliminates the need for public links or permanent storage.
+# <img src="public/favicondrop.png" width="32" height="32" /> VedDrop - Secure File Sharing
 
-✨ Key Features
-PIN-Based Sharing: Secure your uploads with a unique PIN.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-id/deploy-status)](https://veddrop.netlify.app)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
-Auto-Deletion: All files are automatically deleted after 10 minutes for maximum privacy.
+**VedDrop** is a privacy-focused web application designed for fast, temporary file transfers using a secure PIN system. No signups, no permanent links, and no data footprint.
 
-No Sign-up Required: Start sharing immediately without an account.
+[**Launch VedDrop App**](https://veddrop.netlify.app/)
 
-Drag & Drop: Intuitive interface for quick file uploads.
+---
 
-Multiple File Types: Supports PDFs, Images, ZIP files, and more.
+## 📸 Preview
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NabinCenth/VedDrop-Client/main/src/assets/preview.png" alt="VedDrop Interface" width="800">
+</p>
 
-🛠️ Tech Stack
-Frontend: React.js (Vite)
+## ✨ Core Features
+- **PIN-Protected Access**: Files are only accessible via a 6-digit PIN you provide to the receiver.
+- **Auto-Expiry**: To ensure security, shared files automatically delete after 10 minutes.
+- **No Account Needed**: Instant "Drop and Go" functionality—no registration required.
+- **Privacy First**: Files are never publicly indexed or shared outside of your PIN.
 
-Styling: CSS3
+## 🛠️ Technical Implementation
+- **Frontend**: React.js with Vite for high-speed performance.
+- **State Management**: React Hooks.
+- **Accessibility**: Optimized with ARIA labels and semantic HTML.
+- **SEO**: Fully configured with JSON-LD WebApplication schema for Google indexing.
 
-Deployment: Netlify
+## 🚀 Installation & Local Development
 
-🚀 Getting Started
-Prerequisites
-Node.js (v18 or higher)
-
-npm or yarn
-
-Installation
-Clone the repository:
-
-Bash
-
-git clone https://github.com/NabinCenth/VedDrop.git
-Navigate to the project directory:
-
-Bash
-
-cd VedDrop
-Install dependencies:
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/NabinCenth/VedDrop-Client.git](https://github.com/NabinCenth/VedDrop-Client.git)
+Install dependencies
 
 Bash
 
+cd VedDrop-Client
 npm install
-Start the development server:
+Run the development server
 
 Bash
 
 npm run dev
-🌐 Live Demo
-Experience the app live at: https://veddrop.netlify.app/
+🛡️ Security & Privacy
+VedDrop is built to solve the problem of "temporary sharing." Unlike cloud storage (Drive/Dropbox), VedDrop is designed for one-time transfers where you don't want the file to exist on the internet forever.
 
 👤 Author
 Nabin Pokharel
 
-GitHub: @NabinCenth
-
 Website: bedprasadpokharel.com.np
 
-🛡️ Privacy & Security
-VedDrop ensures that your data remains yours. By using temporary storage and PIN-restricted access, we ensure that no public footprint of your files remains on the web after they expire
+GitHub: @NabinCenth
+
+<p align="center"> Built with ❤️ for secure sharing. </p>
