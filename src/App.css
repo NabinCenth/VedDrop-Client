@@ -13,7 +13,6 @@
 }
 @media (max-width: 768px) {
   .veddrop-bg {
-   min-width: 103%; /* Adds padding for smaller screens */
-
+    width: 100%;
   }
 }
