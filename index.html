@@ -1,83 +1,90 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
 
-  <link rel="icon" type="image/png" href="/favicondrop.png" />
-  <link rel="apple-touch-icon" href="/favicondrop.png" />
+    <link rel="icon" type="image/png" href="/favicondrop.png" />
+    <link rel="apple-touch-icon" href="/favicondrop.png" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ✅ STRONG TITLE -->
-  <title>VedDrop – Secure Temporary File Sharing with PIN</title>
+    <!-- ✅ STRONG TITLE -->
+    <title>VedDrop – Secure Temporary File Sharing with PIN</title>
 
-  <!-- ✅ CLEAN DESCRIPTION -->
-  <meta
-    name="description"
-    content="VedDrop is a secure temporary file sharing platform by Nabin Pokharel. Upload files and share them privately using a PIN. Files auto-delete in 10 minutes."
-  />
+    <!-- ✅ CLEAN DESCRIPTION -->
+    <meta
+      name="description"
+      content="VedDrop is a secure temporary file sharing platform by Nabin Pokharel. Upload files and share them privately using a PIN. Files auto-delete in 10 minutes."
+    />
 
-  <meta name="author" content="Nabin Pokharel" />
+    <meta name="author" content="Nabin Pokharel" />
 
-  <meta
-    name="keywords"
-    content="VedDrop, secure file sharing, temporary file sharing, file sharing with PIN, private file sharing"
-  />
+    <meta
+      name="keywords"
+      content="VedDrop, secure file sharing, temporary file sharing, file sharing with PIN, private file sharing"
+    />
 
-  <!-- ✅ OPEN GRAPH (IMPORTANT) -->
-  <meta property="og:site_name" content="VedDrop" />
-  <meta property="og:title" content="VedDrop – Secure File Sharing with a PIN" />
-  <meta property="og:description" content="Upload files and share them securely using a temporary PIN. No signup. Auto-delete in 10 minutes." />
-  <meta property="og:type" content="website" />
- <meta property="og:url" content="https://veddrop.bedprasadpokharel.com.np/" />
- <link rel="canonical" href="https://veddrop.bedprasadpokharel.com.np/" />
+    <!-- ✅ OPEN GRAPH (IMPORTANT) -->
+    <meta property="og:site_name" content="VedDrop" />
+    <meta
+      property="og:title"
+      content="VedDrop – Secure File Sharing with a PIN"
+    />
+    <meta
+      property="og:description"
+      content="Upload files and share them securely using a temporary PIN. No signup. Auto-delete in 10 minutes."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://veddrop.bedprasadpokharel.com.np/"
+    />
+    <link rel="canonical" href="https://veddrop.bedprasadpokharel.com.np/" />
 
- 
-  <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "VedDrop",
-    "alternateName": ["Ved Drop", "VedDrop App"],
-    "url": "https://veddrop.netlify.app/"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "VedDrop",
-    "url": "https://veddrop.netlify.app",
-    "description": "VedDrop is a secure temporary file sharing platform. Upload files and share them privately using a PIN. Files expire automatically after 10 minutes.",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "All",
-    "author": {
-      "@type": "Person",
-      "name": "Nabin Pokharel",
-      "alternateName": "Bed Prasad Pokharel",
-      "sameAs": "https://github.com/NabinCenth"
-    },
-    "creator": {
-      "@type": "Person",
-      "name": "Nabin Pokharel",
-      "url": "https://bedprasadpokharel.com.np"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
-  }
-]
-</script>
-</head>
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "VedDrop",
+          "alternateName": ["Ved Drop", "VedDrop App"],
+          "url": "https://veddrop.netlify.app/"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "VedDrop",
+          "url": "https://veddrop.netlify.app",
+          "description": "VedDrop is a secure temporary file sharing platform. Upload files and share them privately using a PIN. Files expire automatically after 10 minutes.",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "All",
+          "author": {
+            "@type": "Person",
+            "name": "Nabin Pokharel",
+            "alternateName": "Bed Prasad Pokharel",
+            "sameAs": "https://github.com/NabinCenth"
+          },
+          "creator": {
+            "@type": "Person",
+            "name": "Nabin Pokharel",
+            "url": "https://bedprasadpokharel.com.np"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }
+      ]
+    </script>
+  </head>
 
   <body>
-
     <div id="root"></div>
-   <script>
-  window.addEventListener("dragover", e => e.preventDefault());
-  window.addEventListener("drop", e => e.preventDefault());
-</script>
+    <script>
+      window.addEventListener("dragover", (e) => e.preventDefault());
+      window.addEventListener("drop", (e) => e.preventDefault());
+    </script>
 
     <script type="module" src="/src/main.jsx"></script>
   </body>

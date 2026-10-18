@@ -7,17 +7,20 @@
 ---
 
 ## 📸 Preview
+
 <p align="center">
   <img src="VedDrop-Preview.png" alt="VedDrop Interface" width="800">
 </p>
 
 ## ✨ Core Features
+
 - **PIN-Protected Access**: Files are only accessible via a 6-digit PIN you provide to the receiver.
 - **Auto-Expiry**: To ensure security, shared files automatically delete after 10 minutes.
 - **No Account Needed**: Instant "Drop and Go" functionality—no registration required.
 - **Privacy First**: Files are never publicly indexed or shared outside of your PIN.
 
 ## 🛠️ Technical Implementation
+
 - **Frontend**: React.js with Vite for high-speed performance.
 - **State Management**: React Hooks.
 - **Accessibility**: Optimized with ARIA labels and semantic HTML.
@@ -28,6 +31,8 @@
 1. **Clone the repository**
    ```bash
    git clone [https://github.com/NabinCenth/VedDrop-Client.git](https://github.com/NabinCenth/VedDrop-Client.git)
+   ```
+
 Install dependencies
 
 Bash
@@ -45,7 +50,7 @@ VedDrop is built to solve the problem of "temporary sharing." Unlike cloud stora
 👤 Author
 Nabin Pokharel
 
-Website: bedprasadpokharel.com.np
+Website: [**VedDrop**]("veddrop.bedprasadpokharel.com.np")
 
 GitHub: @NabinCenth
 

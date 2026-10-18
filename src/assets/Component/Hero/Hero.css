@@ -12,13 +12,13 @@
   grid-template-columns: 1fr 1fr;
   gap: clamp(2rem, 6vw, 4rem);
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Left */
-.hero-left{
-    display: flex;
-    flex-direction: column;
+.hero-left {
+  display: flex;
+  flex-direction: column;
 }
 .hero-left h1 {
   font-size: clamp(2rem, 5vw, 3rem);
@@ -47,19 +47,18 @@
   font-weight: 600;
   cursor: pointer;
   align-self: center;
-    transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .upload-btn:hover {
   background: #22c1ae;
   transform: translateY(-1.5px);
-   box-shadow: 0 0 28px rgba(50, 224, 232, 0.35);
+  box-shadow: 0 0 28px rgba(50, 224, 232, 0.35);
 }
 .upload-btn:active {
   transform: translateY(0);
-   box-shadow: 0 0 28px rgba(50, 224, 232, 0.55);
+  box-shadow: 0 0 28px rgba(50, 224, 232, 0.55);
 }
-
 
 .file-types {
   margin-top: 20px;
@@ -84,23 +83,23 @@
   background: #151f2b;
   border: 2px dashed rgba(45, 212, 191, 0.4);
   border-radius: 20px;
-  padding: 20px;           /* add some padding */
+  padding: 20px; /* add some padding */
   display: flex;
-  flex-direction: column;   /* stack children vertically */
-  justify-content: center;  /* vertical centering */
-  align-items: center;      /* horizontal centering */
-  min-height: 200px;        /* optional: give some height */
-  text-align: center;       /* center text inside children */
+  flex-direction: column; /* stack children vertically */
+  justify-content: center; /* vertical centering */
+  align-items: center; /* horizontal centering */
+  min-height: 200px; /* optional: give some height */
+  text-align: center; /* center text inside children */
 }
 
 .drag-text {
   color: #9ca3af;
   font-size: larger;
-  margin-bottom: 20px;       /* spacing between text and PIN code */
+  margin-bottom: 20px; /* spacing between text and PIN code */
 }
 
 .pin-code {
-  display: block;          
+  display: block;
   font-size: clamp(28px, 7vw, 42px);
   font-weight: bold;
   letter-spacing: clamp(3px, 2vw, 6px);
@@ -154,4 +153,3 @@
     padding: 1rem;
   }
 }
- 

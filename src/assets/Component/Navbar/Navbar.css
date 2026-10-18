@@ -4,7 +4,7 @@
   align-items: center;
 
   padding: clamp(10px, 3vw, 16px) clamp(14px, 4vw, 24px);
-  color: #E0E0E0;
+  color: #e0e0e0;
   gap: 12px;
 }
 
@@ -35,10 +35,9 @@
 /* Shared button base */
 .sendFiles,
 .ReceiveFiles {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
-  padding: clamp(8px, 2.5vw, 10px)
-           clamp(16px, 4vw, 24px);
+  padding: clamp(8px, 2.5vw, 10px) clamp(16px, 4vw, 24px);
 
   border-radius: 9999px;
   border: none;
@@ -51,7 +50,9 @@
   cursor: pointer;
 
   box-shadow: 0 0 20px rgba(50, 224, 232, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 /* Hover / Active */
@@ -68,22 +69,20 @@
 
 /* States */
 .active {
-  background: linear-gradient(90deg, #1ECAD3, #32E0E8);
-  color: #0B1F24;
+  background: linear-gradient(90deg, #1ecad3, #32e0e8);
+  color: #0b1f24;
 }
 
 .inactive {
-  background: #0B1F24;
-  color: #1ECAD3;
+  background: #0b1f24;
+  color: #1ecad3;
 }
 @media (max-width: 768px) {
   .container {
-
     padding-top: 20px;
-  
+
     justify-content: space-around;
   }
-  
 
   .navlinks {
     order: 3;

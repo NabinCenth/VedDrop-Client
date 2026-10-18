@@ -12,7 +12,7 @@ export default function PinInput({ length = 6, onComplete }) {
       inputsRef.current[index + 1].focus();
     }
 
-    const pin = inputsRef.current.map(i => i.value).join("");
+    const pin = inputsRef.current.map((i) => i.value).join("");
     if (pin.length === length && onComplete) onComplete(pin);
   };
 
@@ -31,9 +31,9 @@ export default function PinInput({ length = 6, onComplete }) {
           inputMode="numeric"
           maxLength="1"
           className="pin-box"
-          ref={el => (inputsRef.current[i] = el)}
-          onChange={e => handleChange(e, i)}
-          onKeyDown={e => handleKeyDown(e, i)}
+          ref={(el) => (inputsRef.current[i] = el)}
+          onChange={(e) => handleChange(e, i)}
+          onKeyDown={(e) => handleKeyDown(e, i)}
         />
       ))}
     </div>

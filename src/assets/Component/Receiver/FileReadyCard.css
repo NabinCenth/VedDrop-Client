@@ -1,26 +1,22 @@
-.fileready-container{
-
-    background: #141c20;
+.fileready-container {
+  background: #141c20;
   display: flex;
   flex-direction: column;
-justify-content: space-between;
+  justify-content: space-between;
   width: min(92vw, 420px);
   min-height: 320px;
 
   border-radius: 18px;
   padding: clamp(15px, 4vw, 28px);
- box-shadow: 0 0 0 1px rgba(80, 220, 220, 0.25);
+  box-shadow: 0 0 0 1px rgba(80, 220, 220, 0.25);
   box-sizing: border-box;
-
 }
 .file-ready-card {
- 
- font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #e6f2f3;
   /* Visuals */
   color: #e6f2f3;
-  font-family: 'Inter', sans-serif;
- 
+  font-family: "Inter", sans-serif;
 }
 
 .file-ready-content {
@@ -43,7 +39,7 @@ justify-content: space-between;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
-  padding-top:20px;
+  padding-top: 20px;
 }
 
 .info-item {
@@ -60,15 +56,14 @@ justify-content: space-between;
 }
 
 .downloaditem p {
- margin-top: 5px;
- margin-bottom: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
   padding: 3px 3px;
   text-align: center;
   font-size: small;
   word-break: break-all; /* Prevents long filenames from breaking layout */
-   color:#e6f2f3;
-   opacity: 0.6;
-  
+  color: #e6f2f3;
+  opacity: 0.6;
 }
 
 /* Button Styling (Internalized) */
@@ -81,7 +76,9 @@ justify-content: space-between;
   color: #062a2a;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   font-size: 16px;
 }
 

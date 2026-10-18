@@ -2,7 +2,7 @@
   display: flex;
   gap: clamp(6px, 2.5vw, 10px);
   margin-bottom: clamp(15px, 4vw, 23px);
-  margin-top:4px ;
+  margin-top: 4px;
   justify-content: center;
 }
 

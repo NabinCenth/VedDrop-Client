@@ -7,7 +7,7 @@ function Countdown({ initialMinutes = 30 }) {
     if (time <= 0) return;
 
     const timer = setInterval(() => {
-      setTime(t => t - 1);
+      setTime((t) => t - 1);
     }, 1000);
 
     return () => clearInterval(timer);

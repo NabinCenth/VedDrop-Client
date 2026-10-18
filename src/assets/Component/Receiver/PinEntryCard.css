@@ -8,7 +8,7 @@
 
   border-radius: 18px;
   padding: clamp(15px, 4vw, 28px);
- font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #e6f2f3;
   box-shadow: 0 0 0 1px rgba(80, 220, 220, 0.25);
 }
@@ -49,7 +49,9 @@
   font-weight: 600;
   cursor: pointer;
 
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .primary:hover {
