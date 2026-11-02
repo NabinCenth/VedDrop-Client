@@ -12,7 +12,6 @@
   grid-template-columns: 1fr 1fr;
   gap: clamp(2rem, 6vw, 4rem);
   align-items: center;
-  font-family: "Inter", sans-serif;
 }
 
 /* Left */
@@ -22,6 +21,7 @@
 }
 .hero-left h1 {
   font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1px;
 }
@@ -36,6 +36,7 @@
   padding-top: 2px;
   text-align: center;
   align-self: center;
+  font-weight: 400;
 }
 .upload-btn {
   margin-top: 30px;
@@ -67,6 +68,7 @@
   gap: 16px;
   color: #6b7280;
   font-size: 14px;
+  font-weight: 400;
 }
 
 /* Right */
@@ -95,6 +97,7 @@
 .drag-text {
   color: #9ca3af;
   font-size: larger;
+  font-weight: 400;
   margin-bottom: 20px; /* spacing between text and PIN code */
 }
 

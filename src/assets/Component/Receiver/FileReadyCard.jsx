@@ -28,7 +28,7 @@ function FileReadyCard({ fileData }) {
       window.URL.revokeObjectURL(localUrl);
     } catch (error) {
       console.error("Download failed:", error);
-      // Fallback: try opening in a new tab if fetch fails (e.g. CORS issues)
+      // Fallback: try opening in a new tab if fetch fails 
       window.open(fileData.url, "_blank");
     }
   };

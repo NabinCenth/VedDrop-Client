@@ -35,8 +35,6 @@
 /* Shared button base */
 .sendFiles,
 .ReceiveFiles {
-  font-family: "Space Grotesk", sans-serif;
-
   padding: clamp(8px, 2.5vw, 10px) clamp(16px, 4vw, 24px);
 
   border-radius: 9999px;
@@ -44,7 +42,7 @@
 
   min-width: unset;
   font-size: clamp(14px, 3.5vw, 18px);
-  font-weight: 700;
+  font-weight: 600;
 
   text-align: center;
   cursor: pointer;
